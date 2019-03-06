@@ -1,5 +1,4 @@
 folder=$1
 
-pushd $folder
+cd $folder
 cat train.txt, facts.txt, valid.txt, test.txt > all.txt
-popd

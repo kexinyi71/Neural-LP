@@ -1,16 +1,16 @@
 accuracy, False
 batch_size, 64
-ckpt_dir, exps/demo\ckpt
-datadir, ./datasets/kinship
+ckpt_dir, ../exps/demo\ckpt
+datadir, ../datasets/kinship
 dropout, 0.0
 exp_name, demo
-exps_dir, exps/
+exps_dir, ../exps/
 get_phead, True
 gpu, 
 learning_rate, 0.001
 max_epoch, 10
 min_epoch, 5
-model_path, exps/demo\ckpt\model
+model_path, ../exps/demo\ckpt\model
 no_link_percent, 0.0
 no_preds, False
 no_rules, False
@@ -28,6 +28,6 @@ rnn_state_size, 128
 rule_thr, 0.01
 seed, 33
 tag, demo
-this_expsdir, exps/demo
+this_expsdir, ../exps/demo
 thr, 1e-20
 top_k, 10

@@ -31,54 +31,11 @@ class Option:
 
 
 def main():
-    '''
-    parser = argparse.ArgumentParser(description="Experiment setup")
-    # misc
-    parser.add_argument('--seed', default=33, type=int)
-    parser.add_argument('--gpu', default="", type=str)
-    parser.add_argument('--no_train', default=False, action="store_true")
-    parser.add_argument('--from_model_ckpt', default=None, type=str)
-    parser.add_argument('--no_rules', default=False, action="store_true")
-    parser.add_argument('--rule_thr', default=1e-2, type=float)
-    parser.add_argument('--no_preds', default=False, action="store_true")
-    parser.add_argument('--get_vocab_embed', default=False, action="store_true")
-    parser.add_argument('--exps_dir', default="./out", type=str)
-    parser.add_argument('--exp_name', default=None, type=str)
-    # data property
-    parser.add_argument('--datadir', default="./datasets/kinship", type=str)
-    parser.add_argument('--resplit', default=False, action="store_true")
-    parser.add_argument('--no_link_percent', default=0., type=float)
-    parser.add_argument('--type_check', default=False, action="store_true")
-    parser.add_argument('--domain_size', default=128, type=int)
-    parser.add_argument('--no_extra_facts', default=False, action="store_true")
-    parser.add_argument('--query_is_language', default=False, action="store_true")
-    parser.add_argument('--vocab_embed_size', default=128, type=int)
-    # model architecture
-    parser.add_argument('--num_step', default=3, type=int)
-    parser.add_argument('--num_layer', default=1, type=int)
-    parser.add_argument('--rnn_state_size', default=128, type=int)
-    parser.add_argument('--query_embed_size', default=128, type=int)
-    # optimization
-    parser.add_argument('--batch_size', default=64, type=int)
-    parser.add_argument('--print_per_batch', default=3, type=int)
-    parser.add_argument('--max_epoch', default=10, type=int)
-    parser.add_argument('--min_epoch', default=5, type=int)
-    parser.add_argument('--learning_rate', default=0.001, type=float)
-    parser.add_argument('--norm', default=True, action="store_true")
-    parser.add_argument('--thr', default=1e-20, type=float)
-    parser.add_argument('--dropout', default=0., type=float)
-    # evaluation
-    parser.add_argument('--get_phead', default=False, action="store_true")
-    parser.add_argument('--adv_rank', default=False, action="store_true")
-    parser.add_argument('--rand_break', default=False, action="store_true")
-    parser.add_argument('--accuracy', default=False, action="store_true")
-    parser.add_argument('--top_k', default=10, type=int)
-    '''
     parser = argparse.ArgumentParser(description = "Experiment setup")
     #杂项
     parser.add_argument('--seed', default = 33, type = int)
     parser.add_argument('--gpu', default = "", type = str)
-    parser.add_argument('--exps_dir', default="exps/", type=str)
+    parser.add_argument('--exps_dir', default="../exps/", type=str)
     parser.add_argument('--exp_name', default="demo", type=str)
     parser.add_argument('--no_train', default=False, action="store_true")
     parser.add_argument('--no_rules', default=False, action="store_true")
@@ -86,7 +43,7 @@ def main():
     parser.add_argument('--rule_thr', default=1e-2, type=float)
     
     #数据属性 
-    parser.add_argument('--datadir', default = "./datasets/kinship", type=str)
+    parser.add_argument('--datadir', default = "../datasets/kinship", type=str)
     parser.add_argument('--resplit', default = False, action="store_true")
     parser.add_argument('--no_link_percent', default=0., type=float)
     
